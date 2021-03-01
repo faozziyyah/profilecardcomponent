@@ -1,0 +1,137 @@
+
+body{
+  background: hsl(185, 75%, 39%);
+}
+
+.container{
+  box-shadow: -8px 8px 8px hsl(185, 75%, 39%);
+  position: absolute;
+  top: 6em;
+  left: 1.5em;
+  z-index: 9999;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.image-container{
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.image-container img{
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+span .rule{
+  height: 13px;
+  width: 100%;
+  background-color: black;
+}
+
+.about-image{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.about-image img{
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5em;
+  left: 6em;
+}
+
+.about-image h3{
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 50px;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+
+.about-image h3 span{
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+.about-image p{
+  text-align: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  margin-top: -15px;
+  color: hsl(227, 10%, 46%);
+}
+
+.stats{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: -35px;
+  margin-bottom: 1em;
+}
+.activities p{
+  margin-top: -20px;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 0;
+}
+
+
+/*mobile devices*/
+@media only screen and (max-width: 700px){
+  .bodyimage1{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .bodyimage2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+}
+
+/*desktop devices*/
+@media only screen and (min-width: 800px){
+  .bodyimage1{
+    transform: rotate(60deg);
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .bodyimage2{
+    transform: rotate(-2deg);
+    width: 820px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .container{
+    top: 30em;
+    left: 20em;
+    z-index: 99999;
+  }
+  
+  .attribution{
+    bottom: 30px;
+    left: 25em;
+  }
+  
+}
